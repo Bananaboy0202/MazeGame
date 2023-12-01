@@ -35,6 +35,7 @@ namespace mazegame3._0
         public override void LoadContent(ContentManager Content)
         {
             texture = Content.Load<Texture2D>(@"Enemy1.2");
+            Edge = new Rectangle((int)location.X, (int)location.Y, texture.Width, texture.Height);
         }
 
         public override void Update(GameTime gameTime)

@@ -96,8 +96,15 @@ namespace mazegame3
 
 
             // TODO: Add your update logic 
+            //foreach(Maze walls in mazewalls)
+            //{
 
-            
+            //}
+
+            if(firstenemy.Edge.Intersects(hero.Edge))
+            {
+                Exit();
+            }
 
 
 

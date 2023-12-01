@@ -43,6 +43,7 @@ namespace mazegame3._0
         {
             wall = Content.Load<Texture2D>(@"wall");
             floor = Content.Load<Texture2D>(@"floor");
+            Edge = new Rectangle((int)location.X, (int)location.Y, wall.Width, wall.Height);
         }
 
         public void Draw(SpriteBatch sb, GraphicsDeviceManager gd)

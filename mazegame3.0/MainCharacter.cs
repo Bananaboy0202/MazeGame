@@ -35,9 +35,11 @@ namespace mazegame3._0
         public override void LoadContent(ContentManager Content)
         {
             texture = Content.Load<Texture2D>(@"spritehero4");
+            Edge = new Rectangle((int)location.X, (int)location.Y, 50, 64);
         }
         public override void Update(GameTime gameTime)
         {
+            Edge = new Rectangle((int)location.X, (int)location.Y, 50, 64);
             KeyboardState ks = Keyboard.GetState();
             if (ks.IsKeyDown(Keys.A))
             {
